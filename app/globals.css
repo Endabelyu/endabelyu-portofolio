@@ -1,27 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Raleway', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+@layer utilities{
+
+.shadow-default {
+  box-shadow:0px 0px 1px 0px #219653, 0px 0px 8px 0px rgba(33, 150, 83, 0.30);
+}
+.shadow-hover {
+  box-shadow:0px 0px 1px 0px #219653, 0px 0px 8px 0px rgba(33, 150, 83, 0.30), 4px 4px 2px 0px rgba(46, 184, 92, 0.60);
+ 
+}
+
+.button-primary{
+  border-radius: 6.25rem;
+background: #2EB85C; 
+padding: 0.75rem 1rem;
+width: 100%;
+color: #fff;
+font-weight: bold;
+}
+.button-secondary{
+border-radius: .8rem;
+background: #ffffff; 
+padding: 0.3rem 0.5rem;
+width: 100%;
+color: #807c7c;
+box-shadow: 0px 0px 2px 2px #b1dfc4; 
+font-weight: 500;
+}
+.shadow-green{
+  box-shadow: 0px 0px 2px 1px #b1dfc4; 
+  
+
+}
+.shadow-icon{
+  border-radius: 6.25rem;
+  background: #D6F5E0;
+  display:flex; 
+  gap:0.5rem;
+  padding: 5px 0.75rem
+}
+}
+
+.car-card {
+  @apply  gap-4 w-4/5 shadow-default p-4 mx-auto  justify-center items-start bg-[#F7FDF9;] hover:bg-[#DEF8E9] shadow-md hover:shadow-hover rounded-[0.875rem];
 }

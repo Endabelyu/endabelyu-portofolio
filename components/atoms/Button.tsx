@@ -1,16 +1,13 @@
+type Props = {
+  text: string;
+};
 
-const Button = ({ text, onClick }) => {
-    return (
-      <button
-        type="button"
-        style={{
-          margin: 10px,
-        }}
-        onClick={onClick}
-      >
-        {text}
-      </button>
-    );
-  };
-  
-  export default Button;
+const Button = ({ text }: Props) => {
+  return (
+    <div>
+      <button type="button">{text}</button>
+    </div>
+  );
+};
+
+export default Button;

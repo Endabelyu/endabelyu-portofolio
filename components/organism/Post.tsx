@@ -14,7 +14,7 @@ const Post = () => {
             src="/dummyImage.png"
             alt="Project Thumbnail"
             height={125}
-            width={250}
+            width={300}
             className="rounded-xl shadow-green"
           />
 

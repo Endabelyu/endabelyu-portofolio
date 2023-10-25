@@ -11,9 +11,9 @@ const Project = () => {
           <Image
             src="/dummyImage.png"
             alt="Project Thumbnail"
+            width={300}
             height={125}
-            width={250}
-            className="rounded-xl shadow-green sm:h-[9rem]    "
+            className="rounded-xl shadow-green w-80% sm:h-[9rem]    "
           />
           <ul className="shadow-icon ">
             <li className="">

@@ -11,9 +11,9 @@ const Learn = () => {
           <Image
             src="/dummyImage.png"
             alt="Project Thumbnail"
-            width={250}
+            width={300}
             height={160}
-            className="rounded-xl shadow-green sm:h-[9rem]   sm:w-[200px]"
+            className="rounded-xl shadow-green  sm:h-[9rem]   sm:w-[200px]"
           />
           <span>
             <div className="flex flex-col ">

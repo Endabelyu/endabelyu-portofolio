@@ -24,7 +24,7 @@ const Learn = () => {
                 better
               </p>
             </div>
-            <Link href="#" className="flex gap-2 w-full justify-end">
+            <Link href="/learn/1" className="flex gap-2 w-full justify-end">
               <p className=" text-[#2EB85C] text-semibold sm:hidden">Detail</p>
               <Image
                 src="/icon/link-icon.svg"

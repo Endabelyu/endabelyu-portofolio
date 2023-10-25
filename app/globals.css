@@ -23,7 +23,7 @@ body {
 }
 
 .button-primary{
-  border-radius: 6.25rem;
+  border-radius: .8rem;
 background: #2EB85C; 
 padding: 0.75rem 1rem;
 width: 100%;
@@ -51,6 +51,56 @@ font-weight: 500;
   gap:0.5rem;
   padding: 5px 0.75rem
 }
+
+
+/* border slider animation */
+
+
+  
+
+.links {
+  position: relative;
+}
+
+.links:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #32db7b;
+  width: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: 1s ease;
+  transition: .3s ease;
+}
+.links:before {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #32db7b;
+  width: 0;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 1s ease;
+  transition: .3s ease;
+}
+
+
+.links:hover:after,.links:hover:before { 
+  width: 50%; 
+}
+
+
+/* when active */
+.active::before{
+  transition: none;
+  width: 50%;
+ 
+}
+.active::after{
+  transition: none;
+  width: 50%;
+ 
+}
+/* border slider animation */
 }
 
 .car-card {

@@ -13,7 +13,7 @@ const Project = () => {
             alt="Project Thumbnail"
             width={300}
             height={125}
-            className="rounded-xl shadow-green w-80% sm:h-[9rem]    "
+            className="rounded-md shadow-green w-80% sm:h-[9rem]    "
           />
           <ul className="shadow-icon ">
             <li className="">
@@ -33,10 +33,10 @@ const Project = () => {
               />
             </li>
           </ul>
-          <div className="flex flex-col">
-            <h2 className="font-bold text-base">Fyp Web</h2>
+          <div className="flex flex-col gap-1">
+            <h2 className="font-bold text-base ">Fyp Web</h2>
 
-            <p className="text-sm text-[#3B3B3B]">
+            <p className="text-sm sm:text-[15px]  text-[#3B3B3B]">
               Creating online stores and platforms for businesses to sell
               products and services to customers worldwide.
             </p>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className=" text-slate-500 text-[12px] sm:text-base ">
+    <div className=" text-slate-500 text-[12px] sm:text-base bg-slate-50 ">
       <div className="mx-auto w-full">
         <p className="text-center mb-2">Let&apos;s connect with me</p>
         <div className="flex gap-1 sm:gap-4 justify-center">
@@ -26,7 +26,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="p-3 bg-white   ">
+      <div className="p-3">
         <p className="text-center sm">
           &copy; Naswa Wilantama 2023 • Inspired By Baymax
         </p>

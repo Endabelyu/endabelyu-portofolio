@@ -5,9 +5,9 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className="max-w-5xl sm:h-[60vh] h-[40vh] flex flex-col gap-1  ">
+    <div className="max-w-5xl sm:h-[60vh] h-[40vh] flex  flex-col gap-1  ">
       <Title text="Hi, I am Endabelyu !" size="text-5xl" />
-      <p className="text-xl font-roboto mt-3 mb-3  leading-8">
+      <p className="text-xl font-roboto mt-3 mb-3  leading-8 w-3/4">
         Front-end Developer based on indonesia
         <span className="ml-1">
           <Image
@@ -18,8 +18,8 @@ const Hero = () => {
             className="inline"
           />
         </span>
-        . have a passion to creating tools in simple, efficient way and the
-        important thing to make life easier for everyone.
+        .Detail-oriented and passionate about crafting visually appealing and
+        seamless user experiences.
       </p>
 
       <section className="flex gap-7">
@@ -44,6 +44,16 @@ const Hero = () => {
           </Link>
         ))}
       </section>
+      <div className="mouse_scroll">
+        <div className="mouse  hidden sm:block">
+          <div className="wheel  "></div>
+        </div>
+        <div className="hidden sm:block">
+          <span className="m_scroll_arrows unu"></span>
+          <span className="m_scroll_arrows doi"></span>
+          <span className="m_scroll_arrows trei"></span>
+        </div>
+      </div>
     </div>
   );
 };

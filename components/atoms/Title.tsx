@@ -6,7 +6,11 @@ type Props = {
 
 const Title = ({ text, size, position }: Props) => {
   return (
-    <h1 className={`sm:${size} text-3xl font-bold  ${position} sm:text-left`}>
+    <h1
+      className={` text-3xl font-bold  ${
+        position ? position : ''
+      } sm:text-left sm:${size}`}
+    >
       {text}
     </h1>
   );

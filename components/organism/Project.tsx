@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 const Project = () => {
   return (
-    <section>
+    <section id="projects">
       <Title text="Featured Project" size="text-4xl" position="text-center" />
-      <div className="sm:flex sm:gap-5 flex-wrap justify-between">
+      <div className="sm:flex sm:gap-5 flex-wrap justify-between ">
         <div className="car-card mt-5 sm:w-[30%] flex flex-col">
           <Image
             src="/dummyImage.png"

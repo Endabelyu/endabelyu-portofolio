@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 const Navbar = () => {
   const path = usePathname();
   return (
-    <nav className="p-3 bg-white flex justify-center">
+    <nav className="p-3 flex justify-center bg-slate-50">
       <div className="flex flex-1 gap-5 justify-between items-center  sm:justify-around ">
         <Link href="/" className="">
           <Image src="/favicon.ico" width={30} height={30} alt="Logo NW" />

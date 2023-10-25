@@ -5,9 +5,9 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className="max-w-5xl sm:h-[60vh] h-[40vh]  ">
-      <Title text="Hi, I am Endabelyu !" />
-      <p className="text-xl font-roboto mt-3 mb-3">
+    <div className="max-w-5xl sm:h-[60vh] h-[40vh] flex flex-col gap-1  ">
+      <Title text="Hi, I am Endabelyu !" size="text-5xl" />
+      <p className="text-xl font-roboto mt-3 mb-3  leading-8">
         Front-end Developer based on indonesia
         <span className="ml-1">
           <Image
@@ -22,7 +22,7 @@ const Hero = () => {
         important thing to make life easier for everyone.
       </p>
 
-      <section className="flex gap-5">
+      <section className="flex gap-7">
         {Socmeds.map((socmed) => (
           <Link
             href={socmed.href}
@@ -33,12 +33,12 @@ const Hero = () => {
             <Image
               src={socmed.src}
               alt="icon"
-              width={24}
-              height={24}
-              className="inline"
+              width={20}
+              height={20}
+              className="inline sm:w-[24px] sm:h-[24px]"
             />
 
-            <p className="text-sm sm:text-normal font-semibold">
+            <p className="text-xs sm:text-lg font-medium items-center self-center hover:font-semibold">
               {socmed.text}
             </p>
           </Link>

@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Title from '../atoms/Title';
+import Link from 'next/link';
 
 const Project = () => {
   return (
     <section>
-      <Title text="Featured Project" />
+      <Title text="Featured Project" size="text-4xl" position="text-center" />
       <div className="sm:flex sm:gap-5 flex-wrap justify-between">
         <div className="car-card mt-5 sm:w-[30%] flex flex-col">
           <Image
@@ -12,7 +13,7 @@ const Project = () => {
             alt="Project Thumbnail"
             height={125}
             width={250}
-            className="rounded-xl "
+            className="rounded-xl shadow-green sm:h-[9rem]    "
           />
           <ul className="shadow-icon ">
             <li className="">
@@ -40,7 +41,9 @@ const Project = () => {
               products and services to customers worldwide.
             </p>
           </div>
-          <button className="button-primary">See Details</button>
+          <Link href="/projects/1 " className="w-full">
+            <button className="button-primary">See Details</button>
+          </Link>
         </div>
         <div className="car-card mt-5 sm:w-[30%] flex flex-col">
           <Image
@@ -223,10 +226,12 @@ const Project = () => {
           <button className="button-primary">See Details</button>
         </div>
       </div>
-      <div className="mt-5 ml-auto mr-0 w-[15%] ">
-        <button className="button-secondary hover:bg-[#83d4a5] hover:shadow-slate-100 hover:text-white">
-          See More Project
-        </button>
+      <div className="mt-5   w-3/4 mx-auto sm:ml-auto sm:mr-0 sm:w-[15%]  ">
+        <Link href="/projects">
+          <button className="button-secondary hover:bg-[#83d4a5] hover:shadow-slate-100 hover:text-white">
+            See More Project
+          </button>
+        </Link>
       </div>
     </section>
   );

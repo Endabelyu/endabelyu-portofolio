@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Learn = () => {
   return (
     <section className="flex flex-col gap-10">
-      <Title text="Current Learning" />
+      <Title text="Current Learning" size="text-4xl" position="text-center" />
       <div className="sm:flex sm:gap-2 flex-row flex-wrap sm:flex-wrap justify-between ">
         <div className="car-card flex flex-col sm:flex-row sm:w-[45%]  mt-5 relative">
           <Image

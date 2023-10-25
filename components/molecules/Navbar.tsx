@@ -14,7 +14,7 @@ const Navbar = () => {
             <Link
               href={link.href}
               key={link.key}
-              className="text-slate-600 text-[12px] sm:text-lg"
+              className="text-slate-600 text-sm sm:text-lg"
             >
               {link.text}
             </Link>

@@ -1,5 +1,7 @@
+import Underconstruction from '@/components/molecules/Underconstruction';
+
 const Projects = () => {
-  return <div>Projects</div>;
+  return <Underconstruction />;
 };
 
 export default Projects;

@@ -1,5 +1,7 @@
+import Underconstruction from '@/components/molecules/Underconstruction';
+
 const Learn = () => {
-  return <div>Learn</div>;
+  return <Underconstruction />;
 };
 
 export default Learn;

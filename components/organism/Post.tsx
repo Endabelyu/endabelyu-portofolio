@@ -4,22 +4,22 @@ import Link from 'next/link';
 
 const Post = () => {
   return (
-    <section className="mb-10 p-4 border-b-2">
-      <Title text="Current Posts" size="text-4xl" position="text-center" />
+    <section className="mb-10 p-4 border-b-2 sm:flex sm:flex-col sm:gap-6">
+      <Title text="Current Posts" position="text-center" />
       <div className="sm:flex sm:gap-5 flex-wrap justify-between">
         <div className="car-card flex flex-col mt-5 sm:w-[30%]">
-          <h2 className="font-bold text-base">Fyp Web</h2>
+          <h2 className="font-bold text-lg">Fyp Web</h2>
 
           <Image
             src="/dummyImage.png"
             alt="Project Thumbnail"
             height={125}
-            width={300}
+            width={350}
             className="rounded-xl shadow-green"
           />
 
           <div className="flex flex-col">
-            <p className="text-sm text-[#3B3B3B]">
+            <p className="text-sm text-[#3B3B3B] sm:text-base">
               Creating online stores and platforms for businesses to sell
               products and services to customers worldwide.
             </p>

@@ -1,6 +1,6 @@
 type Props = {
   text: string;
-  size: string;
+  size?: string;
   position?: string;
 };
 
@@ -9,7 +9,7 @@ const Title = ({ text, size, position }: Props) => {
     <h1
       className={` text-3xl font-bold  ${
         position ? position : ''
-      } sm:text-left sm:${size}`}
+      } sm:text-left  ${size ? size : '2xl:text-5xl'} `}
     >
       {text}
     </h1>

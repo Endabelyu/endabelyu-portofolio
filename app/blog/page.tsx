@@ -1,5 +1,7 @@
+import Underconstruction from '@/components/molecules/Underconstruction';
+
 const Blog = () => {
-  return <div>Blog</div>;
+  return <Underconstruction />;
 };
 
 export default Blog;

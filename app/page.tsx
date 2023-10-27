@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-5xl sm:pt-40 pt-16 px-5 flex flex-col gap-20">
+    <main className="mx-auto max-w-5xl sm:pt-52 pt-16 px-5 flex flex-col gap-16 sm:gap-20">
       <Hero />
       <Project />
       <Learn />

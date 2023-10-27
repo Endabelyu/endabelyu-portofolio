@@ -4,21 +4,21 @@ import Link from 'next/link';
 
 const Learn = () => {
   return (
-    <section className="flex flex-col gap-10">
-      <Title text="Current Learning" size="text-4xl" position="text-center" />
+    <section className="flex flex-col gap-6">
+      <Title text="Current Learning" position="text-center" />
       <div className="sm:flex sm:gap-2 flex-row flex-wrap sm:flex-wrap justify-between ">
         <div className="car-card flex flex-col sm:flex-row sm:w-[45%]  mt-5 relative">
           <Image
             src="/dummyImage.png"
             alt="Project Thumbnail"
-            width={300}
+            width={350}
             height={160}
             className="rounded-xl shadow-green  sm:h-[9rem]   sm:w-[200px]"
           />
           <span>
             <div className="flex flex-col ">
-              <h2 className="font-bold text-base">Fyp Web</h2>
-              <p className="text-sm text-slate-800">
+              <h2 className="font-bold text-lg">Fyp Web</h2>
+              <p className="text-sm text-slate-800 sm:text-base">
                 Creating online stores and platforms for businesses to sell
                 products and services to customers worldwide.To make bussiness
                 better

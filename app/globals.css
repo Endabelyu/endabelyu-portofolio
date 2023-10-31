@@ -70,6 +70,7 @@ font-weight: 500;
   width: 0;
   position: absolute;
   right: 0;
+  bottom:-5px;
   -webkit-transition: 1s ease;
   transition: .3s ease;
 }
@@ -80,6 +81,8 @@ font-weight: 500;
   width: 0;
   position: absolute;
   left: 0;
+  top:-5px;
+
   -webkit-transition: 1s ease;
   transition: .3s ease;
 }

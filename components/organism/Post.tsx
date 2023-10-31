@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Post = () => {
   return (
-    <section className="mb-10 p-4 border-b-2 sm:flex sm:flex-col sm:gap-6">
+    <section className="mb-10 p-4  sm:flex sm:flex-col sm:gap-6">
       <Title text="Current Posts" position="text-center" />
       <div className="sm:flex sm:gap-5 flex-wrap justify-between">
         <div className="car-card flex flex-col mt-5 sm:w-[30%]">

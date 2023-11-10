@@ -6,25 +6,25 @@ const Learn = () => {
   return (
     <section className="flex flex-col gap-6">
       <Title text="Current Learning" position="text-center" />
-      <div className="sm:flex sm:gap-2 flex-row flex-wrap sm:flex-wrap justify-between ">
-        <div className="car-card flex flex-col sm:flex-row sm:w-[45%]  mt-5 relative">
+      <div className="sm:flex sm:gap-5 flex-row flex-wrap sm:flex-nowrap justify-between ">
+        <div className="car-card flex flex-col sm:flex-row sm:w-[50%]  mt-5 relative">
           <Image
             src="/dummyImage.png"
             alt="Project Thumbnail"
-            width={350}
+            width={250}
             height={160}
-            className="rounded-xl shadow-green  sm:h-[9rem]   sm:w-[200px]"
+            className="rounded-xl shadow-green sm:h-[9rem] sm:w-[200px]"
           />
           <span>
             <div className="flex flex-col ">
-              <h2 className="font-bold text-lg">Fyp Web</h2>
-              <p className="text-sm text-slate-800 sm:text-base">
+              <h2 className="font-bold text-base">Fyp Web</h2>
+              <p className="text-sm text-slate-800">
                 Creating online stores and platforms for businesses to sell
                 products and services to customers worldwide.To make bussiness
                 better
               </p>
             </div>
-            <Link href="/learn/1" className="flex gap-2 w-full justify-end">
+            <Link href="#" className="flex gap-2 w-full justify-end">
               <p className=" text-[#2EB85C] text-semibold sm:hidden">Detail</p>
               <Image
                 src="/icon/link-icon.svg"
@@ -35,13 +35,13 @@ const Learn = () => {
             </Link>
           </span>
         </div>
-        <div className="car-card flex flex-col sm:flex-row sm:w-[45%]  mt-5 relative">
+        <div className="car-card flex flex-col sm:flex-row sm:w-[50%]  mt-5 relative">
           <Image
             src="/dummyImage.png"
             alt="Project Thumbnail"
             width={250}
             height={160}
-            className="rounded-xl shadow-green sm:h-[9rem]   sm:w-[200px]"
+            className="rounded-xl shadow-green sm:h-[9rem] sm:w-[200px]"
           />
           <span>
             <div className="flex flex-col ">

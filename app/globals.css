@@ -115,7 +115,7 @@ font-weight: 500;
 	margin: 0 auto;
 	width: 24px;
 	height: 100px;
-	margin-top: 100px;
+	margin-top: 80px;
 }
 
 
@@ -276,5 +276,5 @@ font-weight: 500;
 
 
 .car-card {
-  @apply  gap-4 w-[95%] sm:w-4/5 shadow-default p-4  justify-center items-start bg-[#F7FDF9;] hover:bg-[#DEF8E9] shadow-md hover:shadow-hover rounded-[0.875rem];
+  @apply  gap-4  sm:w-4/5 shadow-default p-4  justify-center items-start bg-[#F7FDF9;] hover:bg-[#DEF8E9] shadow-md hover:shadow-hover rounded-[0.875rem];
 }

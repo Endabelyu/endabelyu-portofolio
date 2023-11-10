@@ -5,11 +5,11 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className="max-w-5xl sm:h-[70vh] h-[35vh] flex  flex-col gap-2  sm:gap-6  ">
+    <div className=" sm:h-[70vh] h-[35vh] flex  flex-col gap-2  sm:gap-6  ">
       <h1 className="text-3xl 2xl:text-6xl font-bold">
         Hi, I am <span className="text-[#32db7b]">Endabelyu</span> !
       </h1>
-      <p className=" font-roboto  text-xl   leading-8 w-5/6 sm:text-2xl  sm:w-10/12">
+      <p className=" font-roboto  text-xl   leading-8  sm:text-2xl  ">
         A Front-end Developer based on indonesia
         <span className="ml-1">
           <Image

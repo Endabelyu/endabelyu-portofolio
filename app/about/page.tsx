@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <main className="p-6 mx-auto sm:max-w-5xl">
+    <main className="p-6 mx-auto sm:w-3/5">
       <div className="flex flex-col gap-6">
         <header>
           <Title text="About" />
@@ -51,7 +51,7 @@ const About = () => {
                 width={30}
                 height={30}
                 alt="Tech Logo"
-                className="sm:w-[3vw]"
+                className="sm:w-[2.5vw]"
               />
             </li>
             <li>
@@ -60,7 +60,7 @@ const About = () => {
                 width={30}
                 height={30}
                 alt="Tech Logo"
-                className="sm:w-[3vw]"
+                className="sm:w-[2.5vw]"
               />
             </li>
             <li>
@@ -69,7 +69,7 @@ const About = () => {
                 width={30}
                 height={30}
                 alt="Tech Logo"
-                className="sm:w-[3vw]"
+                className="sm:w-[2.5vw]"
               />
             </li>
             <li>
@@ -78,7 +78,7 @@ const About = () => {
                 width={30}
                 height={30}
                 alt="Tech Logo"
-                className="sm:w-[3vw]"
+                className="sm:w-[2.5vw]"
               />
             </li>
             <li>
@@ -87,7 +87,7 @@ const About = () => {
                 width={30}
                 height={30}
                 alt="Tech Logo"
-                className="sm:w-[3vw]"
+                className="sm:w-[2.5vw]"
               />
             </li>
             <li>
@@ -96,7 +96,7 @@ const About = () => {
                 width={30}
                 height={30}
                 alt="Tech Logo"
-                className="sm:w-[3vw]"
+                className="sm:w-[2.5vw]"
               />
             </li>
           </ul>
@@ -110,7 +110,7 @@ const About = () => {
                 width={30}
                 height={30}
                 alt="Tech Logo"
-                className="sm:w-[3vw]"
+                className="sm:w-[2.5vw]"
               />
             </li>
             <li>
@@ -119,7 +119,7 @@ const About = () => {
                 width={30}
                 height={30}
                 alt="Tech Logo"
-                className="sm:w-[3vw]"
+                className="sm:w-[2.5vw]"
               />
             </li>
             <li>
@@ -128,7 +128,7 @@ const About = () => {
                 width={30}
                 height={30}
                 alt="Tech Logo"
-                className="sm:w-[3vw]"
+                className="sm:w-[2.5vw]"
               />
             </li>
             <li>
@@ -137,7 +137,7 @@ const About = () => {
                 width={30}
                 height={30}
                 alt="Tech Logo"
-                className="sm:w-[3vw]"
+                className="sm:w-[2.5vw]"
               />
             </li>
           </ul>

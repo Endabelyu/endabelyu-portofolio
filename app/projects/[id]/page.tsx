@@ -8,10 +8,12 @@ import { useEffect } from 'react';
 
 const Project = () => {
   useEffect(() => {
-    const div = document.querySelector('#backgrounds');
-    console.log(div, 'div');
-    const { top: t, left: l } = div.getBoundingClientRect();
-    console.log(t, l);
+    // const div =
+    // console.log(div, 'div');
+    // const { top: t, left: l } = document
+    //   .querySelector('#backgrounds')
+    //   .getBoundingClientRect();
+    // console.log(t, l);
   }, []);
 
   // window.onscroll = function () {

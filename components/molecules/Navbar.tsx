@@ -10,12 +10,15 @@ const Navbar = () => {
   const params = useParams();
 
   return (
-    <nav className="p-5 flex justify-center sm:w-3/4 mx-auto bg-slate-50">
-      <div className="flex flex-1 gap-5  justify-between items-center  sm:justify-around ">
+    <nav
+      className="px-3 py-2 z-auto flex justify-center sm:w-[55%]  fixed align-middle bg-slate-50 mx-auto top-14 left-1/2 translate-x-[-50%]  rounded-full
+    "
+    >
+      <div className="flex flex-1 gap-5  justify-between items-center ">
         <Link href="/" className="">
-          <Image src="/favicon.ico" width={30} height={30} alt="Logo NW" />
+          <Image src="/favicon.ico" width={40} height={40} alt="Logo NW" />
         </Link>
-        <ul className=" gap-6 hidden sm:flex ">
+        {/* <ul className=" gap-6 hidden sm:flex ">
           {NavLinks.map((link) => (
             <Link
               href={link.href}
@@ -29,12 +32,12 @@ const Navbar = () => {
               {link.text}
             </Link>
           ))}
-        </ul>
+        </ul> */}
         <button className="switch">
           <Image
             src="/icon/light-bulb.svg"
-            width={20}
-            height={20}
+            width={40}
+            height={40}
             alt="mode icon"
           />
         </button>

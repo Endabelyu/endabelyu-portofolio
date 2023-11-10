@@ -8,6 +8,9 @@ import { useEffect } from 'react';
 
 const Project = () => {
   useEffect(() => {
+    const container = document.getElementById('cotainerTOC');
+    const activeLinks = document.getElementById('link');
+    console.log(container);
     // const div =
     // console.log(div, 'div');
     // const { top: t, left: l } = document
@@ -24,7 +27,7 @@ const Project = () => {
   //   console.log('Element Y: ' + y);
   // };
   return (
-    <main className=" mx-auto max-w-5xl mb-5 p-5">
+    <main className=" mx-auto max-w-5xl mb-5 p-5 ">
       <section id="titleProject" className="border-b-4 my-4 pb-2">
         <Image
           src="/dummyImage.png"
@@ -36,7 +39,7 @@ const Project = () => {
         <div className="flex flex-col gap-2">
           <Title text="Fyp Web " size="sm:text-4xl" />
           <p>Website for developer show they wonderful works.</p>
-          <ul className="flex gap-8 w-1/2 items-center font-semibold ">
+          <ul className="flex gap-8 sm:w-1/2 items-center font-semibold ">
             <li className="flex gap-4 ">
               <Image
                 src="/icon/eyeIcon.svg"
@@ -72,11 +75,11 @@ const Project = () => {
           </span>
         </div>
       </section>
-      <section id="bodyProject" className="flex justify-between gap-20">
-        <div className="w-4/6">
+      <section id="bodyProject" className="sm:flex sm:justify-between gap-20">
+        <div className="md:w-4/6">
           <ul className="flex flex-col gap-6">
-            <li className="h-[50vh]">
-              <div id="backgrounds">
+            <li className="h-[50vh] ">
+              <div id="backgrounds" className="flex flex-col gap-4">
                 <Title text="Backround of The Project" size="sm:text-2xl" />
                 <p>
                   I entered a bootcamp in Harisenin Fullstack Development, and
@@ -86,7 +89,7 @@ const Project = () => {
                 </p>
               </div>
             </li>
-            <li className="h-[50vh]">
+            <li className="h-[50vh] flex flex-col gap-4">
               <Title text="Project Goals" size="sm:text-2xl" />
               <p>
                 The goal of this project is to make it simpler for developers to
@@ -94,23 +97,23 @@ const Project = () => {
                 reachable for more people.
               </p>
             </li>
-            <li className="h-[50vh] flex flex-col gap-3">
+            <li className="h-[50vh] flex flex-col gap-4">
               <Title text="Tech Stack" size="sm:text-2xl" />
               <ul className="flex gap-5  items-center">
                 <li>
                   <Image
                     src="/icon/react_logo.svg"
                     alt="stack icon"
-                    width={50}
-                    height={50}
+                    width={30}
+                    height={30}
                   />
                 </li>
                 <li>
                   <Image
                     src="/icon/Tailwind_CSS_logo.svg"
                     alt="stack icon"
-                    width={50}
-                    height={50}
+                    width={30}
+                    height={30}
                   />
                 </li>
               </ul>
@@ -121,7 +124,7 @@ const Project = () => {
                 voluptate sit a?
               </p>
             </li>
-            <li className="h-[50vh]">
+            <li className="h-[50vh] flex flex-col gap-4">
               <Title text="The Features" size="sm:text-2xl" />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ea
@@ -132,21 +135,33 @@ const Project = () => {
             </li>
           </ul>
         </div>
-        <aside className="w-2/6">
+        <aside className="w-2/6" id="cotainerTOC">
           <div className="sticky top-32">
             <div className=" hidden max-h-[calc(100vh-9rem-113px)] overflow-auto pb-4 lg:block">
               <Title text="Table Of Content" size="sm:text-2xl" />
               <ul>
-                <li className="hover:font-semibold hover:text-[#32db7b]">
+                <li
+                  className="hover:font-semibold hover:text-[#32db7b]"
+                  id="link-1"
+                >
                   <p>Background of The Project</p>
                 </li>
-                <li className="hover:font-semibold hover:text-[#32db7b]">
+                <li
+                  className="hover:font-semibold hover:text-[#32db7b]"
+                  id="link-2"
+                >
                   <p>Project Goals</p>
                 </li>
-                <li className="hover:font-semibold hover:text-[#32db7b]">
+                <li
+                  className="hover:font-semibold hover:text-[#32db7b]"
+                  id="link-3"
+                >
                   <p>Tech Stack</p>
                 </li>
-                <li className="hover:font-semibold hover:text-[#32db7b]">
+                <li
+                  className="hover:font-semibold hover:text-[#32db7b]"
+                  id="link-4"
+                >
                   <p>The Features</p>
                 </li>
               </ul>

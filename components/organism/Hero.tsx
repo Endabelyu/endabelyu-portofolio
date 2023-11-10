@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className=" sm:h-[70vh] h-[35vh] flex  flex-col gap-2  sm:gap-6  ">
+    <div className="h-[35vh] flex flex-col gap-2 mt-24 sm:gap-6 sm:h-[70vh] ">
       <h1 className="text-3xl 2xl:text-6xl font-bold">
         Hi, I am <span className="text-[#32db7b]">Endabelyu</span> !
       </h1>

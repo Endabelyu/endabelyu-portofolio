@@ -11,7 +11,7 @@ const Learn = () => {
           <Image
             src="/dummyImage.png"
             alt="Project Thumbnail"
-            width={250}
+            width={300}
             height={160}
             className="rounded-xl shadow-green sm:h-[9rem] sm:w-[200px]"
           />
@@ -39,7 +39,7 @@ const Learn = () => {
           <Image
             src="/dummyImage.png"
             alt="Project Thumbnail"
-            width={250}
+            width={300}
             height={160}
             className="rounded-xl shadow-green sm:h-[9rem] sm:w-[200px]"
           />

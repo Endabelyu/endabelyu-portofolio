@@ -1,10 +1,28 @@
+'use client';
+
 import Title from '@/components/atoms/Title';
+import { Console } from 'console';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 const Project = () => {
+  useEffect(() => {
+    const div = document.querySelector('#backgrounds');
+    console.log(div, 'div');
+    const { top: t, left: l } = div.getBoundingClientRect();
+    console.log(t, l);
+  }, []);
+
+  // window.onscroll = function () {
+  //   let rect = element.getBoundingClientRect();
+  //   let x = rect.left;
+  //   let y = rect.top;
+  //   console.log('Element X: ' + x);
+  //   console.log('Element Y: ' + y);
+  // };
   return (
-    <main className=" mx-auto max-w-5xl mb-5 ">
+    <main className=" mx-auto max-w-5xl mb-5 p-5">
       <section id="titleProject" className="border-b-4 my-4 pb-2">
         <Image
           src="/dummyImage.png"
@@ -56,13 +74,15 @@ const Project = () => {
         <div className="w-4/6">
           <ul className="flex flex-col gap-6">
             <li className="h-[50vh]">
-              <Title text="Backround of The Project" size="sm:text-2xl" />
-              <p>
-                I entered a bootcamp in Harisenin Fullstack Development, and to
-                complete the final assignment, we had to construct one project
-                with our team, so after a discussion with the whole team, this
-                was the project that was chosen to develop.
-              </p>
+              <div id="backgrounds">
+                <Title text="Backround of The Project" size="sm:text-2xl" />
+                <p>
+                  I entered a bootcamp in Harisenin Fullstack Development, and
+                  to complete the final assignment, we had to construct one
+                  project with our team, so after a discussion with the whole
+                  team, this was the project that was chosen to develop.
+                </p>
+              </div>
             </li>
             <li className="h-[50vh]">
               <Title text="Project Goals" size="sm:text-2xl" />
@@ -72,13 +92,20 @@ const Project = () => {
                 reachable for more people.
               </p>
             </li>
-            <li className="h-[50vh]">
-              {' '}
+            <li className="h-[50vh] flex flex-col gap-3">
               <Title text="Tech Stack" size="sm:text-2xl" />
-              <ul className="flex gap-5">
+              <ul className="flex gap-5  items-center">
                 <li>
                   <Image
-                    src="/icon/eyeIcon.svg"
+                    src="/icon/react_logo.svg"
+                    alt="stack icon"
+                    width={50}
+                    height={50}
+                  />
+                </li>
+                <li>
+                  <Image
+                    src="/icon/Tailwind_CSS_logo.svg"
                     alt="stack icon"
                     width={50}
                     height={50}

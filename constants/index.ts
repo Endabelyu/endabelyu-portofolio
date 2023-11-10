@@ -13,7 +13,7 @@ export const Socmeds = [
   },
   {
     src: '/icon/github-sign.png',
-    href: '/https://github.com/Endabelyu',
+    href: 'https://github.com/Endabelyu',
     key: 'Github',
     text: 'Github',
   },

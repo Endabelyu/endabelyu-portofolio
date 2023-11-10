@@ -47,7 +47,7 @@ const About = () => {
           <ul className="flex gap-5 mt-3 items-center ">
             <li>
               <Image
-                src="/icon/react_logo.svg"
+                src="/icon/React_logo.svg"
                 width={30}
                 height={30}
                 alt="Tech Logo"
@@ -92,7 +92,7 @@ const About = () => {
             </li>
             <li>
               <Image
-                src="/icon/svelte_logo.svg"
+                src="/icon/Svelte_logo.svg"
                 width={30}
                 height={30}
                 alt="Tech Logo"
@@ -106,7 +106,7 @@ const About = () => {
           <ul className="flex gap-5 mt-3 items-center ">
             <li>
               <Image
-                src="/icon/react_logo.svg"
+                src="/icon/React_logo.svg"
                 width={30}
                 height={30}
                 alt="Tech Logo"

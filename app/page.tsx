@@ -6,11 +6,11 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="mx-auto md:w-3/5  pt-16  px-8 flex flex-col  gap-16  sm:pt-24 rounded-xl sm:gap-20 shadow-card">
+    <main className="pt-10 px-2 relative">
       <Hero />
-      <Project />
+      {/* <Project />
       <Learn />
-      <Post />
+      <Post /> */}
     </main>
   );
 }

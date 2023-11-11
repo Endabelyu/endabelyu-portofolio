@@ -76,7 +76,7 @@ const Project = () => {
         </div>
       </section>
       <section id="bodyProject" className="sm:flex sm:justify-between gap-20">
-        <div className="md:w-4/6">
+        <div className="">
           <ul className="flex flex-col gap-6">
             <li className="h-[50vh] ">
               <div id="backgrounds" className="flex flex-col gap-4">
@@ -135,7 +135,8 @@ const Project = () => {
             </li>
           </ul>
         </div>
-        <aside className="w-2/6" id="cotainerTOC">
+        {/* used when blog is available */}
+        {/* <aside className="w-2/6" id="cotainerTOC">
           <div className="sticky top-32">
             <div className=" hidden max-h-[calc(100vh-9rem-113px)] overflow-auto pb-4 lg:block">
               <Title text="Table Of Content" size="sm:text-2xl" />
@@ -167,7 +168,7 @@ const Project = () => {
               </ul>
             </div>
           </div>
-        </aside>
+        </aside> */}
       </section>
     </main>
   );

@@ -15,10 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-slate-50  p-10">
-        <Navbar />
-        {children}
-        <Footer />
+      <body className="bg-slate-50 p-2  sm:p-10">
+        <div className="mx-auto lg:w-3/5 px-2  sm:px-8   gap-16  pt-6 rounded-xl sm:gap-20  shadow-card relative">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

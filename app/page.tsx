@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="pt-10 px-2 relative">
+    <main className=" my-10 sm:my-20 px-2 relative">
       <Hero />
       {/* <Project />
       <Learn />

@@ -119,13 +119,13 @@ const Project = () => {
           </Link>
         </div>
       </div>
-      <div className="mt-5   w-3/4 mx-auto sm:ml-auto sm:mr-0 sm:w-[15%]  ">
+      {/* <div className="mt-5   w-3/4 mx-auto sm:ml-auto sm:mr-0 sm:w-[15%]  ">
         <Link href="/projects">
           <button className="button-secondary hover:bg-[#83d4a5] hover:shadow-slate-100 hover:text-white">
             See More Project
           </button>
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 };

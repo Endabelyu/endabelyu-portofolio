@@ -4,7 +4,7 @@ import Title from '../atoms/Title';
 import { NavLinks, Socmeds } from '@/constants';
 import Link from 'next/link';
 import { useParams, usePathname, useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import Project from './Project';
 import Post from './Post';
 import Underconstruction from '../molecules/Underconstruction';
@@ -40,7 +40,7 @@ const Hero = () => {
       </p>
 
       <section>
-        <ul className="flex gap-8 sm:w-7/12 my-2">
+        <ul className="flex gap-5 sm:gap-8 sm:w-7/12 my-2 cursor-pointer">
           {Socmeds.map((socmed) => (
             <Link
               href={socmed.href}
@@ -70,7 +70,7 @@ const Hero = () => {
           {NavLinks.map((link) => (
             <span
               key={link.key}
-              className={`text-slate-600 text-sm sm:text-2xl hover:text-slate-900  ${
+              className={`text-slate-600 text-sm sm:text-2xl hover:text-slate-900 cursor-pointer  ${
                 active === link.key ? 'text-slate-900 active font-medium' : ''
               }  links `}
               onClick={() => setActive(link.key)}
@@ -83,7 +83,9 @@ const Hero = () => {
 
       {/* render component when tab active */}
       {tabs.map((tab) => (
-        <>{active === tab.label ? tab.component : ''}</>
+        <Fragment key={tab.label}>
+          {active === tab.label ? tab.component : ''}
+        </Fragment>
       ))}
       {/*  */}
 

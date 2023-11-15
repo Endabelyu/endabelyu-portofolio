@@ -3,13 +3,43 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useParams, usePathname, useRouter } from 'next/navigation';
+import { useEffect, useRef } from 'react';
 
 const Navbar = () => {
+  const first = useRef(null);
+  // console.log(first.current, 'ref');
+
+  useEffect(() => {
+    window.addEventListener('scroll', (e) => {
+      if (window.scrollY > 50) {
+        document
+          .getElementById('navbar')
+          ?.classList.replace('bg-transparent', 'bg-slate-100');
+        document.getElementById('navbar')?.classList.add('shadow-green');
+      } else {
+        document
+          .getElementById('navbar')
+          ?.classList.replace('bg-slate-100', 'bg-transparent');
+        document.getElementById('navbar')?.classList.remove('shadow-green');
+      }
+    });
+  }, []);
+
   return (
-    <nav className="w-full  sticky top-5 bg-slate-50  rounded-full z-10 bg-transparent shadow-green">
+    <nav
+      id="navbar"
+      ref={first}
+      className=" sticky w-full top-5 rounded-full z-10 bg-transparent"
+    >
       <div className="flex sm:flex-1 gap-5 px-2 py-3 justify-between items-center ">
         <Link href="/" className="">
-          <Image src="/favicon.ico" width={40} height={40} alt="Logo NW" />
+          <Image
+            src="/favicon.ico"
+            width={30}
+            height={30}
+            alt="Logo NW"
+            className="sm:w-10"
+          />
         </Link>
         {/* <ul className=" gap-6 hidden sm:flex ">
             {NavLinks.map((link) => (
@@ -29,9 +59,10 @@ const Navbar = () => {
         <button className="switch">
           <Image
             src="/icon/light-bulb.svg"
-            width={40}
-            height={40}
+            width={30}
+            height={30}
             alt="mode icon"
+            className="sm:w-10"
           />
         </button>
       </div>

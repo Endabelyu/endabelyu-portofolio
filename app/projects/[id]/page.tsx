@@ -101,7 +101,7 @@ const Project = () => {
               <ul className="flex gap-5  items-center">
                 <li>
                   <Image
-                    src="/icon/react_logo.svg"
+                    src="/icon/React_logo.svg"
                     alt="stack icon"
                     width={30}
                     height={30}

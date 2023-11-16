@@ -8,9 +8,8 @@ import { useEffect } from 'react';
 
 const Project = () => {
   useEffect(() => {
-    const container = document.getElementById('cotainerTOC');
-    const activeLinks = document.getElementById('link');
-    console.log(container);
+    // const container = document.getElementById('cotainerTOC');
+    // const activeLinks = document.getElementById('link');
     // const div =
     // console.log(div, 'div');
     // const { top: t, left: l } = document
@@ -32,15 +31,15 @@ const Project = () => {
         <Image
           src="/dummyImage.png"
           width={800}
-          height={600}
+          height={800}
           alt="image project"
-          className="w-full shadow-default rounded-xl mx-auto my-6"
+          className="sm:w-full shadow-default rounded-xl mx-auto my-6"
         />
         <div className="flex flex-col gap-2">
           <Title text="Fyp Web " size="sm:text-4xl" />
-          <p>Website for developer show they wonderful works.</p>
-          <ul className="flex gap-8 sm:w-1/2 items-center font-semibold ">
-            <li className="flex gap-4 ">
+          <p>Website for all developers show they wonderful works.</p>
+          <ul className="flex  gap-4 sm:gap-8 sm:w-1/2 items-center font-semibold ">
+            <li className="flex gap-2 sm:gap-4 ">
               <Image
                 src="/icon/eyeIcon.svg"
                 width={24}
@@ -50,7 +49,7 @@ const Project = () => {
               <p>2000</p>
             </li>
             <li className=" hover:cursor-pointer hover:bg-green-100">
-              <Link href="#" className="flex gap-2 ">
+              <Link href="#" className="flex gap-1 sm:gap-2 ">
                 <p>Visit Web</p>
                 <Image
                   src="/icon/externalLink.svg"
@@ -64,7 +63,7 @@ const Project = () => {
               <p className="font-semibold">Year: 2023</p>
             </li>
           </ul>
-          <span className="flex gap-4 font-semibold items-center">
+          <span className="flex sm:gap-4 font-semibold items-center">
             <Image
               src="/icon/peopleIcon.svg"
               width={28}
@@ -78,7 +77,7 @@ const Project = () => {
       <section id="bodyProject" className="sm:flex sm:justify-between gap-20">
         <div className="">
           <ul className="flex flex-col gap-6">
-            <li className="h-[50vh] ">
+            <li className=" ">
               <div id="backgrounds" className="flex flex-col gap-4">
                 <Title text="Backround of The Project" size="sm:text-2xl" />
                 <p>
@@ -89,7 +88,7 @@ const Project = () => {
                 </p>
               </div>
             </li>
-            <li className="h-[50vh] flex flex-col gap-4">
+            <li className=" flex flex-col gap-4">
               <Title text="Project Goals" size="sm:text-2xl" />
               <p>
                 The goal of this project is to make it simpler for developers to
@@ -97,7 +96,7 @@ const Project = () => {
                 reachable for more people.
               </p>
             </li>
-            <li className="h-[50vh] flex flex-col gap-4">
+            <li className=" flex flex-col gap-4">
               <Title text="Tech Stack" size="sm:text-2xl" />
               <ul className="flex gap-5  items-center">
                 <li>
@@ -118,19 +117,22 @@ const Project = () => {
                 </li>
               </ul>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ea
-                illum repellendus expedita maxime ut. Sint aperiam perspiciatis
-                itaque, fuga accusamus libero tenetur cumque hic, dolores velit
-                voluptate sit a?
+                This project was developed using React JS for frontend
+                framework, because we learn react js during bootcamp, and we
+                need to do implementation in real project. <br /> <br /> For
+                styling this project we use tailwind css, because we think
+                tailwind css can support we as a beginner to implementation css
+                native, but can still keep up with new css technology.
               </p>
             </li>
-            <li className="h-[50vh] flex flex-col gap-4">
+            <li className="flex flex-col gap-4">
               <Title text="The Features" size="sm:text-2xl" />
+              {/* bisa mnenambah project baru, bisa merubah data project and profile  mengubah profile, menagatur profile,   */}
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ea
-                illum repellendus expedita maxime ut. Sint aperiam perspiciatis
-                itaque, fuga accusamus libero tenetur cumque hic, dolores velit
-                voluptate sit a?
+                The main feature in fyp web is the project from the developers,
+                because in line with the purpose of creating this application.
+                Other features in this application are: <br /> - Customize
+                profile account <br /> - login, logout && authorization
               </p>
             </li>
           </ul>

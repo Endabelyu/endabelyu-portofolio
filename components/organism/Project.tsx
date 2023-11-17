@@ -7,7 +7,7 @@ const Project = () => {
     <section id="projects" className="sm:flex sm:flex-col sm:gap-6 ">
       <Title text="Featured Project" position="text-center" />
       <div className=" flex justify-center sm:gap-6 flex-col sm:flex-row  sm:justify-start">
-        <div className="car-card mt-5 sm:w-[1/3] flex flex-col flex-1">
+        <div className="car-card mt-5 h-[45vh] sm:w-[1/3] flex flex-col flex-1">
           <Image
             src="/dummyImage.png"
             alt="Project Thumbnail"
@@ -18,15 +18,15 @@ const Project = () => {
           <ul className="shadow-icon ">
             <li className="">
               <Image
-                src="/icon/linkedin-sign.svg"
+                src="/icon/React_logo.svg"
                 width={20}
                 height={20}
                 alt="icon languange"
               />
             </li>
-            <li className="">
+            <li className="self-center">
               <Image
-                src="/icon/linkedin-sign.svg"
+                src="/icon/Tailwind_CSS_logo.svg"
                 width={20}
                 height={20}
                 alt="icon languange"
@@ -35,9 +35,9 @@ const Project = () => {
           </ul>
           <div className="flex flex-col gap-1">
             <h2 className="font-bold  text-lg">Fyp Web</h2>
-            <p className="text-sm sm:text-base  text-[#3B3B3B]">
-              Creating online stores and platforms for businesses to sell
-              products and services to customers worldwide.
+            <p className="text-sm sm:text-base   text-[#3B3B3B]">
+              A dedicated space for developers to showcase their impressive
+              projects.
             </p>
           </div>
           <Link href="/projects/1 " className="w-full">
@@ -52,7 +52,7 @@ const Project = () => {
             height={125}
             className="rounded-md shadow-green w-80% sm:h-[9rem]    "
           />
-          <ul className="shadow-icon ">
+          <ul className="shadow-icon flex ">
             <li className="">
               <Image
                 src="/icon/linkedin-sign.svg"
@@ -61,12 +61,13 @@ const Project = () => {
                 alt="icon languange"
               />
             </li>
-            <li className="">
+            <li className="self-center">
               <Image
                 src="/icon/linkedin-sign.svg"
                 width={20}
                 height={20}
                 alt="icon languange"
+                className="align-middle"
               />
             </li>
           </ul>

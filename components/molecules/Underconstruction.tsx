@@ -11,7 +11,7 @@ const Underconstruction = () => {
         Sorry, this page is under development. Will be available as soon as
         possible.
       </p>
-      <Button text="Back To Home" />
+      {/* <Button text="Back To Home" /> */}
     </div>
   );
 };

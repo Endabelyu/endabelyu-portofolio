@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useParams, usePathname, useRouter } from 'next/navigation';
 import { useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const first = useRef(null);
@@ -31,17 +32,22 @@ const Navbar = () => {
       ref={first}
       className=" sticky w-full top-5 rounded-full z-10 bg-transparent"
     >
-      <div className="flex sm:flex-1 gap-5 px-2 py-3 justify-between items-center ">
-        <Link href="/" className="">
-          <Image
-            src="/favicon.ico"
-            width={30}
-            height={30}
-            alt="Logo NW"
-            className="sm:w-10"
-          />
-        </Link>
-        {/* <ul className=" gap-6 hidden sm:flex ">
+      <AnimatePresence>
+        <motion.div
+          initial={{ x: 0, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+        >
+          <div className="flex sm:flex-1 gap-5 px-2 py-3 justify-between items-center ">
+            <Link href="/" className="">
+              <Image
+                src="/favicon.ico"
+                width={30}
+                height={30}
+                alt="Logo NW"
+                className="sm:w-10"
+              />
+            </Link>
+            {/* <ul className=" gap-6 hidden sm:flex ">
             {NavLinks.map((link) => (
               <Link
                 href={link.href}
@@ -56,16 +62,18 @@ const Navbar = () => {
               </Link>
             ))}
           </ul> */}
-        <button className="switch">
-          <Image
-            src="/icon/light-bulb.svg"
-            width={30}
-            height={30}
-            alt="mode icon"
-            className="sm:w-10"
-          />
-        </button>
-      </div>
+            <button className="switch">
+              <Image
+                src="/icon/light-bulb.svg"
+                width={30}
+                height={30}
+                alt="mode icon"
+                className="sm:w-10"
+              />
+            </button>
+          </div>
+        </motion.div>
+      </AnimatePresence>
     </nav>
   );
 };

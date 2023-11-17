@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <main className="p-6 mx-auto sm:w-3/5">
+    <main className=" sm:p-0 mx-auto mt-5 sm:mt-[-20px]">
       <div className="flex flex-col gap-6">
-        <header>
+        <header className="flex flex-col gap-3">
           <Title text="About" />
           <Title text="Naswa Wilantama" color="text-[#32db7b]" />
         </header>

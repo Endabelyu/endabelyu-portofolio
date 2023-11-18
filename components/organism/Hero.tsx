@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Title from '../atoms/Title';
-import { NavLinks, Socmeds } from '@/constants';
+import { NavLinks, Professional } from '@/constants';
 import Link from 'next/link';
 import { useParams, usePathname, useRouter } from 'next/navigation';
 import { Fragment, useState } from 'react';
@@ -45,10 +45,9 @@ const Hero = () => {
           . Passionate about crafting visually appealing, seamless user
           experiences and impactful work for our environment.
         </p>
-
         <section>
           <ul className="flex gap-5 sm:w-7/12 my-2 cursor-pointer">
-            {Socmeds.map((socmed) => (
+            {Professional.map((socmed) => (
               <Link
                 href={socmed.href}
                 key={socmed.key}
@@ -71,7 +70,6 @@ const Hero = () => {
             ))}
           </ul>
         </section>
-
         <section className="tab-container border-y-4   mb-4">
           <ul className=" flex gap-5 p-3   justify-between ">
             {NavLinks.map((link) => (
@@ -87,25 +85,45 @@ const Hero = () => {
             ))}
           </ul>
         </section>
-
         {/* render component when tab active */}
         {/* <motion.div animate={{ x: 100 }} /> */}
-        <motion.div
+        {/* <motion.div
           initial={{ x: -200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: 300, opacity: 0 }}
           transition={{ bounce: false }}
-        >
-          {tabs.map((tab) => (
-            <Fragment key={tab.label}>
-              {active === tab.label ? tab.component : ''}
-            </Fragment>
-          ))}
-        </motion.div>
-
+        > */}
+        {tabs.map((tab) => (
+          <Fragment key={tab.label}>
+            {active === tab.label ? (
+              <motion.div
+                initial={
+                  active === 'Projects'
+                    ? { x: -200, opacity: 0 }
+                    : active === 'Blog'
+                    ? { y: 300, opacity: 0 }
+                    : { x: 200, opacity: 0 }
+                }
+                animate={
+                  active === 'Projects'
+                    ? { x: 0, opacity: 1 }
+                    : active === 'Blog'
+                    ? { y: 0, opacity: 1 }
+                    : { x: 0, opacity: 1 }
+                }
+                // exit={{ x: 300, opacity: 0 }}
+                transition={{ bounce: false }}
+              >
+                {tab.component}
+              </motion.div>
+            ) : (
+              ''
+            )}
+          </Fragment>
+        ))}
+        {/* </motion.div> */}
         {/* </motion.div> */}
         {/*  */}
-
         {/* <div className="mouse_scroll ">
         <div className="mouse  hidden sm:block">
           <div className="wheel  "></div>

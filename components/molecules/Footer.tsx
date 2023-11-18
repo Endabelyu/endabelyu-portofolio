@@ -1,5 +1,5 @@
 'use client';
-import { Socmeds } from '@/constants';
+import { Socmed } from '@/constants';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="">
             <p className="text-center mb-2">Let&apos;s connect with me</p>
             <div className="flex gap-1 sm:gap-4 justify-center">
-              {Socmeds.map((socmed) => (
+              {Socmed.map((socmed) => (
                 <Link
                   href={socmed.href}
                   key={socmed.key}

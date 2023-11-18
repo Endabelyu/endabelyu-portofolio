@@ -39,13 +39,7 @@ const Navbar = () => {
         >
           <div className="flex sm:flex-1 gap-5 px-2 py-3 justify-between items-center ">
             <Link href="/" className="">
-              <Image
-                src="/favicon.ico"
-                width={30}
-                height={30}
-                alt="Logo NW"
-                className="sm:w-10"
-              />
+              <p className=" rounded-full font-bold text-2xl">NW</p>
             </Link>
             {/* <ul className=" gap-6 hidden sm:flex ">
             {NavLinks.map((link) => (
@@ -62,7 +56,8 @@ const Navbar = () => {
               </Link>
             ))}
           </ul> */}
-            <button className="switch">
+            {/* will activated when fight mode available */}
+            {/* <button className="switch">
               <Image
                 src="/icon/light-bulb.svg"
                 width={30}
@@ -70,7 +65,7 @@ const Navbar = () => {
                 alt="mode icon"
                 className="sm:w-10"
               />
-            </button>
+            </button> */}
           </div>
         </motion.div>
       </AnimatePresence>

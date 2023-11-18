@@ -4,7 +4,7 @@ export const NavLinks = [
   { href: '/blog', key: 'Blog', text: 'Blog' },
   { href: '/about', key: 'About', text: 'About' },
 ];
-export const Socmeds = [
+export const Professional = [
   {
     src: '/icon/linkedin-sign.svg',
     href: 'https://www.linkedin.com/in/naswa-wilantama/',
@@ -19,9 +19,121 @@ export const Socmeds = [
   },
   {
     src: '/icon/file-download.svg',
-    href: '/file',
+    href: 'https://drive.google.com/uc?export=download&id=1ptiqFIR9PMWxs6NE8QAZ3F7yoby14EKP',
     key: 'Resume',
     text: 'My Resume',
+  },
+];
+
+export const project = [
+  {
+    key: 'fyp_web',
+    title: 'Fyp Web',
+    description:
+      '  A dedicated space for developers to showcase their impressive projects.',
+    image: '/dummyImage.png',
+    techStack: [
+      {
+        key: 'react',
+        src: '/icon/React_logo.svg',
+      },
+      {
+        key: 'tailwind',
+        src: '/icon/Tailwind_CSS_logo.svg',
+      },
+    ],
+  },
+  {
+    key: 'fyp_web',
+    title: 'Fyp Web',
+    description:
+      '  A dedicated space for developers to showcase their impressive projects.',
+    image: '/dummyImage.png',
+    techStack: [
+      {
+        key: 'react',
+        src: '/icon/React_logo.svg',
+      },
+      {
+        key: 'tailwind',
+        src: '/icon/Tailwind_CSS_logo.svg',
+      },
+    ],
+  },
+  {
+    key: 'fyp_web',
+    title: 'Fyp Web',
+    description:
+      '  A dedicated space for developers to showcase their impressive projects.',
+    image: '/dummyImage.png',
+    techStack: [
+      {
+        key: 'react',
+        src: '/icon/React_logo.svg',
+      },
+      {
+        key: 'tailwind',
+        src: '/icon/Tailwind_CSS_logo.svg',
+      },
+    ],
+  },
+];
+
+export const detailProject = [
+  {
+    key: 'fyp_web',
+    title: 'Fyp Web',
+    description:
+      '  A dedicated space for developers to showcase their impressive projects.',
+    image: '/dummyImage.png',
+    link: '',
+    year: '2023',
+    role: 'Team of 2, Frontend Developer',
+    background: `I entered a bootcamp in Harisenin Fullstack Development, and
+    to complete the final assignment, we had to construct one
+    project with our team, so after a discussion with the whole
+    team, this was the project that was chosen to develop.`,
+    goals: `  The goal of this project is to make it simpler for developers
+    to display their projects to the public, so that they are more
+    reachable for more people.`,
+    stack: {
+      techStack: [
+        {
+          key: 'react',
+          src: '/icon/React_logo.svg',
+        },
+        {
+          key: 'tailwind',
+          src: '/icon/Tailwind_CSS_logo.svg',
+        },
+      ],
+      description: ` This project was developed using React JS for frontend
+      framework, because we learn react js during bootcamp, and we
+      need to do implementation in real project. <br /> <br /> For
+      styling this project we use tailwind css, because we think
+      tailwind css can support we as a beginner to implementation
+      css native, but can still keep up with new css technology.`,
+    },
+    features: ` The main feature in fyp web is the project from the
+    developers, because in line with the purpose of creating this
+    application. Other features in this application are: <br /> -
+    Customize profile account <br /> - login, logout &
+    authorization`,
+  },
+];
+
+export const Socmed = [
+  {
+    src: '/icon/X_logo.svg',
+    href: 'https://twitter.com/Endab3lyu',
+    key: 'Twitter',
+    text: 'Twitter',
+  },
+  {
+    src: '/icon/Instagram_logo.svg',
+    href: 'https://www.instagram.com/endabelyu.id/',
+    key: 'Instagram',
+    text: 'Instagram',
   },
 ];
 

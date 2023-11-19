@@ -39,7 +39,14 @@ const Navbar = () => {
         >
           <div className="flex sm:flex-1 gap-5 px-2 py-3 justify-between items-center ">
             <Link href="/" className="">
-              <p className=" rounded-full font-bold text-2xl">NW</p>
+              <Image
+                src="/icon/endabelyu.logo.svg"
+                width={30}
+                height={30}
+                alt="mode icon"
+                className="sm:w-12"
+              />
+              {/* <p className=" rounded-full font-bold text-2xl">NW</p> */}
             </Link>
             {/* <ul className=" gap-6 hidden sm:flex ">
             {NavLinks.map((link) => (

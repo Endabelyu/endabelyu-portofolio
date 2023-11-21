@@ -44,7 +44,7 @@ const Navbar = () => {
                 width={30}
                 height={30}
                 alt="mode icon"
-                className="sm:w-12"
+                className="sm:w-11"
               />
               {/* <p className=" rounded-full font-bold text-2xl">NW</p> */}
             </Link>

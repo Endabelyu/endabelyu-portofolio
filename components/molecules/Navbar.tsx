@@ -37,7 +37,7 @@ const Navbar = () => {
           initial={{ x: 0, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
         >
-          <div className="flex sm:flex-1 gap-5 px-2 py-3 justify-between items-center ">
+          <div className="flex sm:flex-1 gap-5 px-2 py-2 justify-between items-center ">
             <Link href="/" className="">
               <Image
                 src="/icon/endabelyu.logo.svg"

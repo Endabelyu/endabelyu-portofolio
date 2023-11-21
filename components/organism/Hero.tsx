@@ -32,7 +32,7 @@ const Hero = () => {
           Hi, I am <span className="text-[#32db7b]">Endabelyu</span> !
         </h1>
         <p className=" font-roboto  text-xl   leading-8  sm:text-2xl  ">
-          A Front-end Developer based on indonesia
+          A Front-end Developer based on Indonesia
           <span className="ml-1">
             <Image
               src="/icon/indonesiaFlag.png"

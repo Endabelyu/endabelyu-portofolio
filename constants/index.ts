@@ -19,7 +19,7 @@ export const Professional = [
   },
   {
     src: '/icon/file-download.svg',
-    href: 'https://drive.google.com/uc?export=download&id=1ptiqFIR9PMWxs6NE8QAZ3F7yoby14EKP',
+    href: 'https://drive.google.com/uc?export=download&id=1RczHM5TUsl8inByX4w-iuWc4WR2TmAQf',
     key: 'Resume',
     text: 'My Resume',
   },
@@ -44,36 +44,20 @@ export const project = [
     ],
   },
   {
-    key: 'fyp_web',
-    title: 'Fyp Web',
+    key: 'reporting_system',
+    title: 'Reporting System',
+    alert: '*This is NDA Project*',
     description:
-      '  A dedicated space for developers to showcase their impressive projects.',
-    image: '/dummyImage.png',
+      'A cutting-edge reporting system designed to streamline and optimize the request approval process',
+    image: '/NDA.png',
     techStack: [
       {
-        key: 'react',
-        src: '/icon/React_logo.svg',
+        key: 'svelte',
+        src: '/icon/Svelte_logo.svg',
       },
       {
-        key: 'tailwind',
-        src: '/icon/Tailwind_CSS_logo.svg',
-      },
-    ],
-  },
-  {
-    key: 'fyp_web',
-    title: 'Fyp Web',
-    description:
-      '  A dedicated space for developers to showcase their impressive projects.',
-    image: '/dummyImage.png',
-    techStack: [
-      {
-        key: 'react',
-        src: '/icon/React_logo.svg',
-      },
-      {
-        key: 'tailwind',
-        src: '/icon/Tailwind_CSS_logo.svg',
+        key: 'bootsrap',
+        src: '/icon/Bootstrap_logo.svg',
       },
     ],
   },
@@ -87,7 +71,7 @@ export const detailProject = [
       '  A dedicated space for developers to showcase their impressive projects.',
     image: '/dummyImage.png',
     link: '',
-    year: '2023',
+    year: '2022',
     role: 'Team of 2, Frontend Developer',
     background: `I entered a bootcamp in Harisenin Fullstack Development, and
     to complete the final assignment, we had to construct one
@@ -107,18 +91,45 @@ export const detailProject = [
           src: '/icon/Tailwind_CSS_logo.svg',
         },
       ],
-      description: ` This project was developed using React JS for frontend
+      description: `This project was developed using React JS for frontend
       framework, because we learn react js during bootcamp, and we
-      need to do implementation in real project. <br /> <br /> For
+      need to do implementation in real project. For
       styling this project we use tailwind css, because we think
       tailwind css can support we as a beginner to implementation
       css native, but can still keep up with new css technology.`,
     },
-    features: ` The main feature in fyp web is the project from the
-    developers, because in line with the purpose of creating this
-    application. Other features in this application are: <br /> -
-    Customize profile account <br /> - login, logout &
-    authorization`,
+    features:
+      'The main feature in fyp web is the project from the developers, because in line with the purpose of creating this application. Other features in this application like Customize profile account, login, logout & authorization',
+  },
+  {
+    key: 'reporting_system',
+    title: 'Reporting System',
+    alert: '*This is NDA Project*',
+    description:
+      'A cutting-edge reporting system designed to streamline and optimize the request approval process',
+    image: '/NDA.png',
+    link: '',
+    year: '2023',
+    role: 'Team of 4, Frontend Developer',
+    background: `Our client in my current company have a problem, the problem is hard to track request, hard to find past file, managing and controling request process.`,
+    goals: `The goal of this project is to solve all the client problem, we doing digitalize request process, making management  and controlling system.`,
+    stack: {
+      techStack: [
+        {
+          key: 'svelte',
+          src: '/icon/Svelte_logo.svg',
+        },
+        {
+          key: 'bootsrap',
+          src: '/icon/Bootstrap_logo.svg',
+        },
+      ],
+      description: ` This project was developed using Svelte JS frontend
+      framework,to make a minimum size application. For
+      styling this project we use bootsrap css, because to make our team easier to build this apps with the short timeline.`,
+    },
+
+    features: `The main important feature in this project is the management request process system. But any other features we provide to our client like User Friendly Request Submission, Efficient Approval Workflow, Real-time Status Updates. `,
   },
 ];
 

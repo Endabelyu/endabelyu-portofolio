@@ -61,21 +61,23 @@ const Project = () => {
               />
               <p>2000</p>
             </li> */}
-                  <li className=" hover:cursor-pointer hover:bg-green-100 hover:bg-none ">
-                    <Link
-                      href="#"
-                      className="flex gap-1 sm:gap-2   hover:text-black border-b-2 border-green-200"
-                    >
-                      <p className="">Visit Web</p>
-                      <Image
-                        src="/icon/externalLink.svg"
-                        width={24}
-                        height={24}
-                        alt="eye icon"
-                        className=""
-                      />
-                    </Link>
-                  </li>
+                  {link.length > 0 && (
+                    <li className=" hover:cursor-pointer hover:bg-green-100 hover:bg-none ">
+                      <Link
+                        href="#"
+                        className="flex gap-1 sm:gap-2   hover:text-black border-b-2 border-green-200"
+                      >
+                        <p className="">Visit Web</p>
+                        <Image
+                          src="/icon/externalLink.svg"
+                          width={24}
+                          height={24}
+                          alt="eye icon"
+                          className=""
+                        />
+                      </Link>
+                    </li>
+                  )}
                   <li>
                     <p className="font-semibold">Year: {year}</p>
                   </li>

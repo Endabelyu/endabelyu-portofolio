@@ -7,12 +7,12 @@ const Project = () => {
   return (
     <section id="projects" className="sm:flex sm:flex-col sm:gap-6 ">
       <Title text="Featured Project" position="text-center" />
-      <div className=" flex justify-center sm:gap-6 flex-col sm:flex-row  sm:justify-start">
+      <div className=" flex justify-center sm:gap-6 flex-col sm:flex-row  sm:justify-start ">
         {project.map(
           ({ key, image, title, description, techStack, alert }, i) => (
             <div
               key={key}
-              className="car-card mt-5 h-[45vh] sm:w-[18vw] flex flex-col"
+              className="car-card mt-5 h-[60vh] sm:w-[18vw] sm:h-[45vh] flex flex-col"
             >
               <Image
                 src={image}
